@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LoginApplication</string>
+    
+    <string name="powered_by_appstand">Powered by Appstand</string>
+    <string name="login_login">Login</string>
+    <string name="login_mania">Mania</string>
+    <string name="login_sign_up">Sign up</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_password">Password</string>
+    <string name="login_username">Username</string>
+    <string name="login_get_to_account">To get to your account</string>
+    <string name="login_invalid_email">Invalid E-mail!</string>
+    <string name="login_invalid_password">Invalid password!</string>
+    <string name="login_failed">Login failed!</string>
+    <string name="login_error">Error</string>
+    <string name="login_register_success">Registration success!</string>
+    <string name="login_submit">Submit</string>
+    <string name="login_your_password_is">Your password is: %1$s</string>
+
+    <string name="logged_in_title">Logged in!</string>
+    <string name="logged_in_logout">Log out</string>
+    <string name="logged_in_logout_icon_description">Log out icon</string>
+    <string name="logged_in_welcome">Welcome %1$s!</string>
+</resources>

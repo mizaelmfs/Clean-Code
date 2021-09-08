@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LoginApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_blue</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">@color/pink</item>
+        <item name="colorOnSurface">@color/gray</item>
+        <item name="colorError">@color/bright_red</item>
+
+        <item name="android:windowBackground">?attr/colorAccent</item>
+        <item name="shapeAppearanceMediumComponent">@style/shapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/shapeAppearance.App.LargeComponent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="textInputStyle">@style/Style.App.textInputLayout</item>
+    </style>
+
+    <style name="Theme.LoginApplication.Splash" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/pink</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/pink</item>
+    </style>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dp_16">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/loginTitleMania"
+                    android:textColor="?attr/colorSecondary"
+                    android:text="@string/login_login"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:gravity="end"
+                    android:id="@+id/loginTitleLogin"
+                    app:layout_constraintBottom_toTopOf="@id/loginView"
+                    app:layout_constraintVertical_bias="0"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/loginTitleLogin"
+                    app:layout_constraintStart_toEndOf="@id/loginTitleLogin"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:text="@string/login_mania"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:gravity="start"
+                    android:id="@+id/loginTitleMania"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loginView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/getToYourAccountView"
+                    android:layout_marginBottom="@dimen/dp_2"
+                    android:text="@string/login_login"
+                    android:textColor="?attr/colorPrimary"
+                    android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/getToYourAccountView"
+                    android:textColor="?attr/colorOnSurface"
+                    android:text="@string/login_get_to_account"
+                    app:layout_constraintBottom_toTopOf="@id/usernameLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usernameLayout"
+                    app:layout_constraintBottom_toTopOf="@id/passwordLayout"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    app:startIconDrawable="@drawable/ic_baseline_person_outline_24"
+                    android:hint="@string/login_username">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/usernameEditText"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/passwordLayout"
+                    app:layout_constraintBottom_toTopOf="@id/forgotPasswordView"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                    android:hint="@string/login_password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:id="@+id/passwordEditText"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forgotPasswordView"
+                    android:text="@string/login_forgot_password"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:textColor="?attr/colorSecondary"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/loginButton"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loginButton"
+                    app:layout_constraintBottom_toTopOf="@id/signUpButton"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:text="@string/login_login"
+                    android:backgroundTint="?attr/colorAccent"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:id="@+id/signUpButton"
+                    android:text="@string/login_sign_up"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:text="@string/powered_by_appstand"
+            android:textColor="?attr/colorPrimaryVariant"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

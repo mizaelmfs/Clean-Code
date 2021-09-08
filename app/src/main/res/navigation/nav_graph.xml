@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loggedInFragment">
+
+    <action
+        android:id="@+id/logOut"
+        app:destination="@+id/loginFragment"
+        app:enterAnim="@anim/slide_in_top"
+        app:exitAnim="@anim/slide_out_top"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true"/>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.loginapplication.screens.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/to_loggedIn"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/loggedInFragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_top"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/loggedInFragment"
+        android:name="com.example.loginapplication.screens.loggedin.LoggedInFragment"
+        tools:layout="@layout/fragment_logged_in"/>
+
+</navigation>
